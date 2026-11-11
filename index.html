@@ -187,7 +187,10 @@ footer .fnames{font:400 clamp(42px,12.4vw,56px)/1.1 var(--script);color:var(--cr
 footer .fnames span{font-size:.6em;color:#a8803c}
 footer .fdate{font:600 14px var(--caps);letter-spacing:.4em;padding-left:.4em;text-transform:uppercase;color:#7a5a22;margin-top:18px}
 footer .fday{font:500 15px var(--te);color:var(--ink-soft);margin-top:6px}
-footer .ftag{font:600 11.5px var(--caps);letter-spacing:.34em;color:#8a6a3c;margin-top:56px}
+footer .ftag{font:600 11.5px var(--caps);letter-spacing:.34em;color:#8a6a3c;margin-top:30px}
+footer .farch{width:min(64%,250px);aspect-ratio:3/4;margin:28px auto 0;padding:4px;border-radius:200px 200px 10px 10px;overflow:hidden;background:linear-gradient(160deg,#9c742f,#f0d9a4 30%,#a67c2e 55%,#e6c98e 80%,#8f6a2c);box-shadow:0 0 0 7px rgba(253,249,241,.9),0 0 0 8px rgba(176,138,74,.6),0 18px 34px -14px rgba(90,50,30,.45)}
+footer .farch::after{content:"";position:absolute;inset:0;border-radius:200px 200px 10px 10px;box-shadow:inset 0 0 0 4px #c9a560,inset 0 0 0 5px rgba(120,80,30,.35);pointer-events:none}
+footer .farch img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 38%;border-radius:200px 200px 7px 7px;transform:scale(1.6);transform-origin:50% 74%}
 footer .script{color:var(--crimson);font-size:68px;line-height:.9}
 footer .caps{color:#7a5a22}
 .hidden{display:none!important}
@@ -537,7 +540,7 @@ function build(){
       <h1 class="names ${lang==="te"?"te-d":""}" ${lang==="te"?'style="font-size:44px;line-height:1.2"':""}>${esc(nm[0])}<span class="amp">&amp;</span>${esc(nm[1])}</h1></div>
     <div class="low"><p class="caps" style="letter-spacing:.42em">${lang==="te"?"శుభ ముహూర్తం":"Save the date"}</p><p class="sd">${lang==="te"?'<span class="te-d" style="font-size:30px">25 నవంబర్ 2026</span>':"25<sup>th</sup> November 2026"}</p><p class="te">${esc(T(CFG.dayText))}</p></div></div></section>`
     + CFG.sections.map(k=>R[k]?R[k]():"").join("")
-    + `<footer><div class="fghost" aria-hidden="true"></div><img class="fgan" src="ganesh-gold.png" alt="Lord Ganesha"><div class="divider" style="color:#9b3442">${MOTIF.rose}</div><p class="fnames">${esc(CFG.names[0])} <span>&amp;</span> ${esc(CFG.names[1])}</p><p class="fdate">25 · November · 2026</p><p class="fday">బుధవారం · ఉదయం 11:30</p><p class="ftag">${esc(T(CFG.footer))}</p></footer>`;
+    + `<footer><img class="fgan" src="ganesh-gold.png" alt="Lord Ganesha"><div class="divider" style="color:#9b3442">${MOTIF.rose}</div><p class="fnames">${esc(CFG.names[0])} <span>&amp;</span> ${esc(CFG.names[1])}</p><p class="fdate">25 · November · 2026</p><p class="fday">బుధవారం · ఉదయం 11:30</p><div class="farch"><img src="couple.jpg" alt="Nandini and Nikhil"></div><p class="ftag">${esc(T(CFG.footer))}</p></footer>`;
   const lg=document.getElementById("lang");
   lg.innerHTML=CFG.langs.length>1?CFG.langs.map(l=>`<button class="${l===lang?"on":""}" data-l="${l}">${l.toUpperCase()}</button>`).join(""):"";
   lg.style.display=CFG.langs.length>1?"flex":"none";
