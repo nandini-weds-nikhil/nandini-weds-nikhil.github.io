@@ -20,7 +20,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400;1,6..96,500&family=Noto+Serif+Telugu:wght@400;500;600&family=Gurajada&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#f7f4f1; --paper:#ffffff; --ink:#1d1517; --ink-soft:#6d5a5d; --accent:#b3122e; --accent-ink:#fff;
+  --bg:#f7f4f1; --paper:#ffffff; --ink:#140d0f; --ink-soft:#3d282c; --accent:#b3122e; --accent-ink:#fff;
   --line:#eadedb; --night:#150b0e; --crimson:#b3122e; --crimson-deep:#7d0b20; --gold:#b89363;
   --script:"Italianno",cursive; --serif:"Bodoni Moda",Georgia,serif; --caps:"Bodoni Moda",Georgia,serif;
   --te:"Noto Serif Telugu","Gautami",serif; --te-d:"Gurajada","Noto Serif Telugu",serif;
@@ -29,7 +29,7 @@
 }
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
-body{background:#ece6e1;color:var(--ink);font:400 17px/1.65 var(--serif);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{background:#ece6e1;color:var(--ink);font:500 17px/1.65 var(--serif);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 body.locked{overflow:hidden;height:100vh}
 /* sunlit plaster: soft light, faint trowel noise */
 #app{max-width:480px;margin:0 auto;min-height:100vh;position:relative;box-shadow:0 0 60px rgba(0,0,0,.12);
@@ -40,11 +40,11 @@ body.locked{overflow:hidden;height:100vh}
     var(--bg)}
 .te{font-family:var(--te)}
 .te-d{font-family:var(--te-d);line-height:1.2}
-.caps{font-family:var(--caps);letter-spacing:.32em;text-transform:uppercase;font-size:11px;font-weight:500;color:var(--ink-soft)}
+.caps{font-family:var(--caps);letter-spacing:.3em;text-transform:uppercase;font-size:11.5px;font-weight:600;color:var(--ink-soft)}
 .script{font-family:var(--script);font-weight:400;line-height:.95;color:var(--ink)}
 h2.script{font-size:clamp(46px,14vw,60px);white-space:nowrap;text-align:center;margin-bottom:4px;color:var(--crimson)}
 section{padding:68px 24px;position:relative}
-.sub{text-align:center;color:var(--ink-soft);margin-bottom:26px;font-style:italic}
+.sub{text-align:center;color:var(--ink-soft);font-weight:500;margin-bottom:26px;font-style:italic}
 .card{background:none;border:0;border-radius:0;padding:26px 4px;box-shadow:none;text-align:center;position:relative}
 .card::before{content:none}
 .card+.card{margin-top:18px}
@@ -130,27 +130,27 @@ body.opened #mute.has{display:block}
 .invoc{display:flex;justify-content:space-between;max-width:330px;margin:0 auto 18px;font:500 13px var(--te);color:var(--crimson-deep)}
 .gan{width:58px;display:block;margin:0 auto 8px}
 .wording{text-align:center;max-width:360px;margin:0 auto}
-.wording .lead{font-style:italic;color:var(--ink-soft)}
+.wording .lead{font-style:italic;font-weight:500;font-size:18px;color:var(--ink)}
 .wording .who{font:400 clamp(32px,9.8vw,42px)/1 var(--script);color:var(--crimson);margin:16px 0 0;white-space:nowrap}
 .wording .who small{font:500 11px var(--caps);letter-spacing:.2em;color:var(--ink-soft);vertical-align:.6em;margin-left:4px}
 .wording .with{font:500 11px var(--caps);letter-spacing:.3em;text-transform:uppercase;color:var(--ink-soft);margin:6px 0 2px}
-.wording .par{font-style:italic;font-size:15.5px;color:var(--ink-soft)}
+.wording .par{font-style:italic;font-weight:500;font-size:16.5px;color:var(--ink-soft)}
 .te-line{font:500 15px/1.7 var(--te);color:var(--crimson-deep);text-align:center;margin-top:18px}
 /* events */
 .evt h3.script{font-size:52px;color:var(--crimson);margin:2px 0 4px}
 .evt .when{font:500 13px var(--caps);letter-spacing:.14em;text-transform:uppercase;color:var(--ink)}
-.evt .tm{font-style:italic;color:var(--ink-soft)}
+.evt .tm{font-style:italic;font-weight:500;color:var(--ink)}
 .evt .place{font:600 16px var(--caps);letter-spacing:.16em;text-transform:uppercase;color:var(--ink);margin-top:14px}
-.evt .addr{color:var(--ink-soft);font-size:15.5px;line-height:1.5}
+.evt .addr{color:var(--ink-soft);font-weight:500;font-size:16.5px;line-height:1.5}
 /* hosts */
 .hosts p{font:500 20px/1.4 var(--serif);color:var(--ink)}
-.hosts .from{font:400 15px/1.5 var(--serif);font-style:italic;color:var(--ink-soft);margin-top:8px}
+.hosts .from{font:500 16px/1.5 var(--serif);font-style:italic;color:var(--ink-soft);margin-top:8px}
 
 /* ---------- COUNTDOWN ---------- */
 .cd{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;max-width:360px;margin:0 auto}
 .cd div{background:none;border:0;padding:10px 2px 6px;text-align:center;position:relative}.cd div+div::before{content:'';position:absolute;left:0;top:18%;bottom:18%;width:1px;background:rgba(179,18,46,.35)}
 .cd b{display:block;font:400 34px/1 var(--serif);color:var(--ink);font-variant-numeric:lining-nums tabular-nums}
-.cd small{font:500 9.5px var(--caps);letter-spacing:.2em;text-transform:uppercase;color:var(--crimson)}
+.cd small{font:600 10px var(--caps);letter-spacing:.2em;text-transform:uppercase;color:var(--crimson)}
 
 /* ---------- TIMELINE ---------- */
 .tl{position:relative;margin:8px auto 0;max-width:340px;text-align:left}
@@ -179,7 +179,15 @@ body.opened #mute.has{display:block}
 .hp{position:absolute!important;left:-9999px;opacity:0;height:0;width:0}
 .thanks{text-align:center;padding:30px 10px;display:none}
 .thanks .script{font-size:44px}
-footer{padding:64px 22px 110px;text-align:center;background:radial-gradient(120% 70% at 50% 0%,#3a0a16,var(--night) 70%);color:#eadcd6}
+footer{position:relative;overflow:hidden;min-height:100svh;padding:120px 22px 120px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:radial-gradient(120% 70% at 50% 0%,#3a0a16,var(--night) 70%);color:#eadcd6}
+footer > *{position:relative;z-index:1}
+footer .fghost{position:absolute;inset:0;z-index:0;background:url(couple.jpg) 50% 30%/cover no-repeat;opacity:.22;-webkit-mask-image:radial-gradient(ellipse 70% 50% at 50% 46%,#000 25%,transparent 75%);mask-image:radial-gradient(ellipse 70% 50% at 50% 46%,#000 25%,transparent 75%)}
+footer .fgan{width:52px;display:block;margin:0 auto 10px}
+footer .fnames{font:400 clamp(54px,16vw,70px)/.95 var(--script);color:#fff;white-space:nowrap;margin-top:12px}
+footer .fnames span{font-size:.6em;color:#d9b36e}
+footer .fdate{font:600 14px var(--caps);letter-spacing:.4em;padding-left:.4em;text-transform:uppercase;color:#e9d29a;margin-top:18px}
+footer .fday{font:500 15px var(--te);color:#eadcd6;margin-top:6px}
+footer .ftag{font:600 11.5px var(--caps);letter-spacing:.34em;color:#d9b9a8;margin-top:56px}
 footer .script{color:#fff;font-size:68px;line-height:.9}
 footer .caps{color:#d9b9a8}
 .hidden{display:none!important}
@@ -285,7 +293,8 @@ footer .caps{color:#d9b9a8}
 @media (prefers-reduced-motion:reduce){.foil{animation:none}}
 .sdeco{position:absolute;top:10px;width:70px;height:70px;color:#c4a06a;opacity:.85;pointer-events:none}
 .sdeco.l{left:10px}.sdeco.r{right:10px;transform:scaleX(-1)}
-footer .sdeco{color:#d9b36e}
+footer .sdeco{color:#d9b36e;z-index:1}
+.sdeco.bl{top:auto;bottom:10px;left:10px;transform:scaleY(-1)}.sdeco.br{top:auto;bottom:10px;right:10px;transform:scale(-1,-1)}
 footer{background:radial-gradient(120% 70% at 50% 0%,#3a0a16,var(--night) 70%)}
 /* ---------- scroll cue on every section ---------- */
 .scroll-cue{position:fixed;z-index:45;left:50%;bottom:calc(14px + env(safe-area-inset-bottom,0px));transform:translate(-50%,12px);display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 30px 8px;border:0;cursor:pointer;
@@ -523,11 +532,12 @@ function build(){
       <h1 class="names ${lang==="te"?"te-d":""}" ${lang==="te"?'style="font-size:44px;line-height:1.2"':""}>${esc(nm[0])}<span class="amp">&amp;</span>${esc(nm[1])}</h1></div>
     <div class="low"><p class="caps" style="letter-spacing:.42em">${lang==="te"?"శుభ ముహూర్తం":"Save the date"}</p><p class="sd">${lang==="te"?'<span class="te-d" style="font-size:30px">25 నవంబర్ 2026</span>':"25<sup>th</sup> November 2026"}</p><p class="te">${esc(T(CFG.dayText))}</p></div></div></section>`
     + CFG.sections.map(k=>R[k]?R[k]():"").join("")
-    + `<footer>${divider("rose")}<p class="script" style="margin-top:14px">${esc(CFG.names[0])} &amp; ${esc(CFG.names[1])}</p><p class="caps" style="margin-top:10px">${esc(T(CFG.dateText))}</p><p class="caps" style="margin-top:22px;letter-spacing:.3em">${esc(T(CFG.footer))}</p></footer>`;
+    + `<footer><div class="fghost" aria-hidden="true"></div><img class="fgan" src="ganesh-gold.png" alt="Lord Ganesha"><div class="divider" style="color:#c8283f">${MOTIF.rose}</div><p class="fnames">${esc(CFG.names[0])} <span>&amp;</span> ${esc(CFG.names[1])}</p><p class="fdate">25 · November · 2026</p><p class="fday">బుధవారం · ఉదయం 11:30</p><p class="ftag">${esc(T(CFG.footer))}</p></footer>`;
   const lg=document.getElementById("lang");
   lg.innerHTML=CFG.langs.length>1?CFG.langs.map(l=>`<button class="${l===lang?"on":""}" data-l="${l}">${l.toUpperCase()}</button>`).join(""):"";
   lg.style.display=CFG.langs.length>1?"flex":"none";
   document.querySelectorAll('#app > section:not(#cover), #app > footer').forEach(sec=>{['l','r'].forEach(side=>{const d=document.createElement('div');d.className='sdeco '+side;d.innerHTML=SDECO;sec.prepend(d)})});
+  const ft=document.querySelector('#app > footer');if(ft)['bl','br'].forEach(c=>{const d=document.createElement('div');d.className='sdeco '+c;d.innerHTML=SDECO;ft.appendChild(d)});
   wire();startFx();
 }
 function wire(){
