@@ -179,17 +179,17 @@ body.opened #mute.has{display:block}
 .hp{position:absolute!important;left:-9999px;opacity:0;height:0;width:0}
 .thanks{text-align:center;padding:30px 10px;display:none}
 .thanks .script{font-size:44px}
-footer{position:relative;overflow:hidden;min-height:100svh;padding:120px 22px 120px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:radial-gradient(120% 70% at 50% 0%,#4a1820,var(--night) 70%);color:#eadcd6}
+footer{position:relative;overflow:hidden;min-height:100svh;padding:120px 22px 120px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:radial-gradient(130% 70% at 50% 35%,rgba(255,255,255,.7),transparent 55%),url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='160' viewBox='0 0 120 160'><g fill='none' stroke='%23b08a4a' stroke-width='.9' opacity='.32'><path d='M60 8c14 18 14 34 0 48c-14-14-14-30 0-48z'/><path d='M60 56c-10 10-26 12-38 4c10-14 26-14 38-4zM60 56c10 10 26 12 38 4c-10-14-26-14-38-4z'/><path d='M60 56v40M60 96c-8 8-20 10-30 4M60 96c8 8 20 10 30 4'/><circle cx='60' cy='120' r='3'/><path d='M0 80c16 0 22-10 22-22M120 80c-16 0-22-10-22-22M0 80c16 0 22 10 22 22M120 80c-16 0-22 10-22 22'/></g></svg>") 0 0/120px 160px,linear-gradient(180deg,#fdf9f1 0%,#f3e9d7 55%,#e8d9bd 100%);color:var(--ink)}
 footer > *{position:relative;z-index:1}
-footer .fghost{position:absolute;inset:0;z-index:0;background:url(couple.jpg) 50% 30%/cover no-repeat;opacity:.22;-webkit-mask-image:radial-gradient(ellipse 70% 50% at 50% 46%,#000 25%,transparent 75%);mask-image:radial-gradient(ellipse 70% 50% at 50% 46%,#000 25%,transparent 75%)}
+footer .fghost{position:absolute;inset:0;z-index:0;background:url(couple.jpg) 50% 30%/cover no-repeat;opacity:.16;-webkit-mask-image:radial-gradient(ellipse 70% 50% at 50% 46%,#000 25%,transparent 75%);mask-image:radial-gradient(ellipse 70% 50% at 50% 46%,#000 25%,transparent 75%)}
 footer .fgan{width:52px;display:block;margin:0 auto 10px}
-footer .fnames{font:400 clamp(42px,12.4vw,56px)/1.1 var(--script);color:#fff;white-space:nowrap;margin-top:12px}
-footer .fnames span{font-size:.6em;color:#d9b36e}
-footer .fdate{font:600 14px var(--caps);letter-spacing:.4em;padding-left:.4em;text-transform:uppercase;color:#e9d29a;margin-top:18px}
-footer .fday{font:500 15px var(--te);color:#eadcd6;margin-top:6px}
-footer .ftag{font:600 11.5px var(--caps);letter-spacing:.34em;color:#d9b9a8;margin-top:56px}
-footer .script{color:#fff;font-size:68px;line-height:.9}
-footer .caps{color:#d9b9a8}
+footer .fnames{font:400 clamp(42px,12.4vw,56px)/1.1 var(--script);color:var(--crimson);white-space:nowrap;margin-top:12px}
+footer .fnames span{font-size:.6em;color:#a8803c}
+footer .fdate{font:600 14px var(--caps);letter-spacing:.4em;padding-left:.4em;text-transform:uppercase;color:#7a5a22;margin-top:18px}
+footer .fday{font:500 15px var(--te);color:var(--ink-soft);margin-top:6px}
+footer .ftag{font:600 11.5px var(--caps);letter-spacing:.34em;color:#8a6a3c;margin-top:56px}
+footer .script{color:var(--crimson);font-size:68px;line-height:.9}
+footer .caps{color:#7a5a22}
 .hidden{display:none!important}
 .copy{background:none;border:0;color:var(--accent);font:inherit;text-decoration:underline;cursor:pointer;min-height:36px}
 
@@ -296,9 +296,11 @@ footer .caps{color:#d9b9a8}
 @media (prefers-reduced-motion:reduce){.foil{animation:none}}
 .sdeco{position:absolute;top:10px;width:70px;height:70px;color:#c4a06a;opacity:.85;pointer-events:none}
 .sdeco.l{left:10px}.sdeco.r{right:10px;transform:scaleX(-1)}
-footer .sdeco{color:#d9b36e;z-index:1}
+footer .sdeco{color:#a8803c;z-index:2}
 .sdeco.bl{top:auto;bottom:10px;left:10px;transform:scaleY(-1)}.sdeco.br{top:auto;bottom:10px;right:10px;transform:scale(-1,-1)}
-footer{background:radial-gradient(120% 70% at 50% 0%,#4a1820,var(--night) 70%)}
+footer{background:radial-gradient(130% 70% at 50% 35%,rgba(255,255,255,.7),transparent 55%),url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='160' viewBox='0 0 120 160'><g fill='none' stroke='%23b08a4a' stroke-width='.9' opacity='.32'><path d='M60 8c14 18 14 34 0 48c-14-14-14-30 0-48z'/><path d='M60 56c-10 10-26 12-38 4c10-14 26-14 38-4zM60 56c10 10 26 12 38 4c-10-14-26-14-38-4z'/><path d='M60 56v40M60 96c-8 8-20 10-30 4M60 96c8 8 20 10 30 4'/><circle cx='60' cy='120' r='3'/><path d='M0 80c16 0 22-10 22-22M120 80c-16 0-22-10-22-22M0 80c16 0 22 10 22 22M120 80c-16 0-22 10-22 22'/></g></svg>") 0 0/120px 160px,linear-gradient(180deg,#fdf9f1 0%,#f3e9d7 55%,#e8d9bd 100%)}
+footer::before{content:'';position:absolute;inset:14px;z-index:1;pointer-events:none;border:1px solid transparent;border-image:linear-gradient(160deg,#9c742f,#e8cf93,#a67c2e,#dcc187,#8f6a2c) 1}
+footer::after{content:'';position:absolute;inset:20px;z-index:1;pointer-events:none;border:.5px solid rgba(176,138,74,.55)}
 /* ---------- scroll cue on every section ---------- */
 .scroll-cue{position:fixed;z-index:45;left:50%;bottom:calc(14px + env(safe-area-inset-bottom,0px));transform:translate(-50%,12px);display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 30px 8px;border:0;cursor:pointer;
   background:radial-gradient(closest-side,rgba(250,247,244,.95) 40%,rgba(250,247,244,.7) 70%,rgba(250,247,244,0));opacity:0;pointer-events:none;transition:opacity .6s ease,transform .6s ease}
@@ -535,7 +537,7 @@ function build(){
       <h1 class="names ${lang==="te"?"te-d":""}" ${lang==="te"?'style="font-size:44px;line-height:1.2"':""}>${esc(nm[0])}<span class="amp">&amp;</span>${esc(nm[1])}</h1></div>
     <div class="low"><p class="caps" style="letter-spacing:.42em">${lang==="te"?"శుభ ముహూర్తం":"Save the date"}</p><p class="sd">${lang==="te"?'<span class="te-d" style="font-size:30px">25 నవంబర్ 2026</span>':"25<sup>th</sup> November 2026"}</p><p class="te">${esc(T(CFG.dayText))}</p></div></div></section>`
     + CFG.sections.map(k=>R[k]?R[k]():"").join("")
-    + `<footer><div class="fghost" aria-hidden="true"></div><img class="fgan" src="ganesh-gold.png" alt="Lord Ganesha"><div class="divider" style="color:#a8475a">${MOTIF.rose}</div><p class="fnames">${esc(CFG.names[0])} <span>&amp;</span> ${esc(CFG.names[1])}</p><p class="fdate">25 · November · 2026</p><p class="fday">బుధవారం · ఉదయం 11:30</p><p class="ftag">${esc(T(CFG.footer))}</p></footer>`;
+    + `<footer><div class="fghost" aria-hidden="true"></div><img class="fgan" src="ganesh-gold.png" alt="Lord Ganesha"><div class="divider" style="color:#9b3442">${MOTIF.rose}</div><p class="fnames">${esc(CFG.names[0])} <span>&amp;</span> ${esc(CFG.names[1])}</p><p class="fdate">25 · November · 2026</p><p class="fday">బుధవారం · ఉదయం 11:30</p><p class="ftag">${esc(T(CFG.footer))}</p></footer>`;
   const lg=document.getElementById("lang");
   lg.innerHTML=CFG.langs.length>1?CFG.langs.map(l=>`<button class="${l===lang?"on":""}" data-l="${l}">${l.toUpperCase()}</button>`).join(""):"";
   lg.style.display=CFG.langs.length>1?"flex":"none";
